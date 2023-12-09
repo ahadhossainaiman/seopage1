@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #E4E4E4;
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #0071BE;
+        border-radius: 5px;
+    }
+
+
+.full_body{
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    margin-top: 100px;
+}
+.task_section{
+    width: 98vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#FFFFFF;
+    border-radius: 5px;
+   
+}
+.task_section_border{
+    margin: 10px;
+    border: 1px solid gray;
+    width: 96vw;
+    height: 79vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.todo_layout{
+   display: flex; 
+   overflow-x: auto;
+}
+.incomplete_task{
+    min-width: 25vw;
+    height: 75vh;
+    background-color: #F2F4F7;
+    overflow-y: auto;
+    margin: 5px;
+}
+.incomplete_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 8px;
+    
+}
+.incomplete_header p{
+    font-size: 20px;
+    margin: 0 5px;
+}
+.incomplete_logo{
+    width: 20px;
+    height:30px;
+    background-color: #00B5FF;
+    margin: 1px 5px;
+    border-radius: 100% 0 0 100% / 60%;
+}
+.todo_logo {
+    width: 20px;
+    height: 30px;
+    background-color: rgb(68, 0, 255);
+    margin: 0 5px;
+    border-radius: 100% 0 0 100% / 60%;
+
+}
+
+.doing_logo {
+    width: 20px;
+    height: 30px;
+    background-color: yellow;
+    margin: 0 5px;
+    border-radius: 100% 0 0 100% / 60%;
+
+}
+.task_item{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.task_item_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+.client_section{
+    display: flex;
+    align-items: center;
+}
+.task_item_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.task_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task_input img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.task_input input {
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.clipboard{
+    background-color:#F2F4F7;
+    padding: 5px;
+}
+.task_item_footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.like_number{
+    background-color:#F2F4F7;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.msg{
+    margin: 0px 7px;
+}
+#customDatePicker{
+    display: none;
+    position: absolute;
+    bottom: -50px;
+    right: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+#date{
+    margin: 0 7px;
+}
+ input[type="file"] {
+     display: none;
+ }
+  #myModal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
